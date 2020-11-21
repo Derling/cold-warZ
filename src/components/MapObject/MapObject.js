@@ -6,7 +6,7 @@ import ObjectDetail from './ObjectDetails';
 
 const MapObject = ({object}) => {
     return (
-        <Grid item x={6}>
+        <Grid item xs={6}>
             {!object ?
                     <span>Hover over an icon on the map</span> :
                     <ObjectDetail object={object} />
