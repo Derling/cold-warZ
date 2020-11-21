@@ -1,13 +1,17 @@
 import React from 'react';
 
+import Grid from '@material-ui/core/Grid';
+
+import ObjectDetail from './ObjectDetails';
+
 const MapObject = ({object}) => {
     return (
-        <div>
+        <Grid item x={6}>
             {!object ?
                     <span>Hover over an icon on the map</span> :
-                    <span>{object} selected!</span>
+                    <ObjectDetail object={object} />
             }
-        </div>
+        </Grid>
     )
 };
 

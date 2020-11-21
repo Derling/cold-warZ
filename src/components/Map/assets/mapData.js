@@ -1,4 +1,4 @@
-export const GRID_SCALE = 1000;
+export const GRID_SCALE = 1000;  // coords come from 1000px by 1000px image
 export const MAP_CIRCLE_SHAPE = 'circle';
 
 const OBJECT_NAMES = {
@@ -16,12 +16,12 @@ const OBJECT_NAMES = {
 const MAP_DATA = [
     // ammos
     {name: OBJECT_NAMES.ammo, coords: [485, 300, 25], shape: MAP_CIRCLE_SHAPE},
-    {name: OBJECT_NAMES.ammo, coords: [480, 500, 25], shape: MAP_CIRCLE_SHAPE},
     {name: OBJECT_NAMES.ammo, coords: [505, 650, 25], shape: MAP_CIRCLE_SHAPE},
     {name: OBJECT_NAMES.ammo, coords: [220, 505, 25], shape: MAP_CIRCLE_SHAPE},
-    {name: OBJECT_NAMES.ammo, coords: [360, 590, 25], shape: MAP_CIRCLE_SHAPE},
     {name: OBJECT_NAMES.ammo, coords: [530, 770, 25], shape: MAP_CIRCLE_SHAPE},
     // mystery box
+    {name: OBJECT_NAMES.mysteryBox, coords: [480, 500, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.mysteryBox, coords: [360, 590, 25], shape: MAP_CIRCLE_SHAPE},
     {name: OBJECT_NAMES.mysteryBox, coords: [520, 170, 25], shape: MAP_CIRCLE_SHAPE},
     {name: OBJECT_NAMES.mysteryBox, coords: [615, 640, 25], shape: MAP_CIRCLE_SHAPE},
     // perks
