@@ -1,23 +1,35 @@
 export const GRID_SCALE = 1000;
 export const MAP_CIRCLE_SHAPE = 'circle';
 
+const OBJECT_NAMES = {
+    // misc
+    ammo: "Ammo Station",
+    mysteryBox: "Mystery Box",
+    craftingTable: "Crafting Table",
+    // perks
+    juggerNog: "Jugger Nog",
+    quickRevive: "Quick Revive",
+    staminaUp: "Stamina Up"
+}
+
 // coords is x, y, radius
 const MAP_DATA = [
     // ammos
-    {name: "Ammo Station", coords: [485, 300, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
-    {name: "Ammo Station", coords: [480, 500, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
-    {name: "Ammo Station", coords: [505, 650, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
-    {name: "Ammo Station", coords: [220, 505, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
-    {name: "Ammo Station", coords: [360, 590, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
+    {name: OBJECT_NAMES.ammo, coords: [485, 300, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.ammo, coords: [480, 500, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.ammo, coords: [505, 650, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.ammo, coords: [220, 505, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.ammo, coords: [360, 590, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.ammo, coords: [530, 770, 25], shape: MAP_CIRCLE_SHAPE},
     // mystery box
-    {name: "Mystery Box", coords: [520, 170, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
-    {name: "Mystery Box", coords: [615, 640, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
+    {name: OBJECT_NAMES.mysteryBox, coords: [520, 170, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.mysteryBox, coords: [615, 640, 25], shape: MAP_CIRCLE_SHAPE},
     // perks
-    {name: "Jugger Nog", coords: [480, 200, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
-    {name: "Quick Revive", coords: [285, 690, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
-    {name: "Stamina Up", coords: [620, 515, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
-    // work benches
-    {name: "Workbench", coords: [550, 550, 25], shape: MAP_CIRCLE_SHAPE, preFillColor:'blue'},
+    {name: OBJECT_NAMES.juggerNog, coords: [480, 200, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.quickRevive, coords: [285, 690, 25], shape: MAP_CIRCLE_SHAPE},
+    {name: OBJECT_NAMES.staminaUp, coords: [620, 515, 25], shape: MAP_CIRCLE_SHAPE},
+    // crafting tables
+    {name: OBJECT_NAMES.craftingTable, coords: [555, 560, 25], shape: MAP_CIRCLE_SHAPE},
 ]
 
 export default MAP_DATA;
