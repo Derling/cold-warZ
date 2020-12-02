@@ -20,7 +20,7 @@ const Map = ({map, updateMap, changeObject}) => {
 
     return (
         <Grid item xs={6}>
-            <ImageMapper onImageClick={e => {console.log(e)}} onLoad={onLoad} map={map} src={die_machine_main} onMouseEnter={area => changeObject(area.name)}/>
+            <ImageMapper onLoad={onLoad} map={map} src={die_machine_main} onMouseEnter={area => changeObject(area.name)}/>
         </Grid>
     )
 };
